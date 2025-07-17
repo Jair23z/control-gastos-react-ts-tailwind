@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+.swipeable-list-item__leading-actions,
+.swipeable-list-item__trailing-actions {
+    @apply text-white text-lg uppercase font-bold;
+}
+
+.swipeable-list-item__leading-actions {
+    @apply bg-blue-600;
+}
+
+.swipeable-list-item__trailing-actions {
+    @apply bg-pink-600;
+}
+
+.swipeable-list .swipe-action {
+    @apply flex justify-center items-center
+}
+
+.react-date-picker .react-date-picker__wrapper {
+    @apply border-none
+}
+
+.recharts-responsive-container .recharts-legend-wrapper .recharts-default-legend {
+    @apply absolute -top-8 left-5
+}
+
+.recharts-wrapper svg.recharts-surface:nth-child(1) {}
